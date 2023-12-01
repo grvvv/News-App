@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>News App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Search </h1>
+          <form id="newsForm">
+            <div class="select-container">
+              <img src="./images/filter-left.svg" alt="">
+              <label for="country"></label>
+              <select class="drop-down" name="country" id="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="in">India</option>
+                <option value="us">United States of America</option>
+                <option value="gb">United Kingdom</option>
+                <option value="ua">Ukraine</option>
+                <option value="jp">Japan</option>
+                <option value="fr">France</option>
+                <option value="de">Germany</option>
+                <option value="cn">China</option>
+                <option value="au">Austrelia</option>
+                <option value="ae">UAE</option>
+                <option value="ru">Russia</option>
+                <option value="ar">Argentina</option>
+              </select>
+              <label for="category"></label>
+              <select class="drop-down" name="category" id="category" required>
+                  <option value="general" selected>General</option>
+                  <option value="entertainment">Entertainment</option>
+                  <option value="business">Business</option>
+                  <option value="science">Science</option>
+                  <option value="health">Health</option>
+                  <option value="technology">Technology</option>
+                  <option value="sports">Sports</option>
+              </select>
+            </div>
+          
+          <button onclick=getNews() type="button">Get Space News</button>
+        </form>
+        <div id="newsContainer"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
