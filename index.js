@@ -4,7 +4,7 @@ import bodyParser from "body-parser";
 
 const app = express();
 const port = 3000;
-const apiKey = 'd7251873553444a3b3a2d72e1fc495b2'; // Replace with your actual API key
+const apiKey = 'YOUR_API_KEY'; // Replace with your actual NEWS API key
 
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
