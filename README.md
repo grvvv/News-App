@@ -39,11 +39,13 @@ Before you begin, ensure you have the following installed on your machine:
 
 2. Install Dependencies
 
+  ```bash
   cd news-app
   npm install
 
 3. Update the News API Ket in `index.js`:
 
+  ```javascript
   const apiKey = 'YOUR_NEWS_API_KEY';
 
 ## Usage
