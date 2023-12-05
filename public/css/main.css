@@ -18,7 +18,10 @@ body {
 
 h1 {
   color: #3498db; /* Blue title color */
-
+  font-family: 'Manrope', sans-serif;
+}
+h1 span{
+  color: #badef7;
 }
 
 .select-container img{

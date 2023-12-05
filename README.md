@@ -7,10 +7,8 @@ A simple web application for fetching and displaying news from the News API.
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Configuration](#configuration)
 - [Usage](#usage)
 - [API Key](#api-key)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Introduction
@@ -34,22 +32,35 @@ Before you begin, ensure you have the following installed on your machine:
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/your-username/news-app.git
+  ```bash
+  git clone https://github.com/your-username/news-app.git
+  ```
 
 2. Install Dependencies
 
   ```bash
   cd news-app
   npm install
+  ```
 
 3. Update the News API Ket in `index.js`:
 
   ```javascript
   const apiKey = 'YOUR_NEWS_API_KEY';
+  ```
 
 ## Usage
   Start the server:
   1. npm start
   2. Open your web browser and navigate to http://localhost:3000.
   3. Use the form to select a country and news category, then click "Get News" to see the latest news articles.
+
+## API Key
+  To obtain a News API Key, sign up on the [News API website](https://newsapi.org/). 
+
+## License
+  This project is licensed under the MIT License.
+
+  ```vbnet
+ Remember to replace placeholders like `YOUR_NEWS_API_KEY`, and others with your actual information. This README provides a starting point, and you can customize it based on your project's structure and requirements.
+  ```
